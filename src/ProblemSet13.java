@@ -123,7 +123,7 @@ public class ProblemSet13 {
 
     public boolean sidesAreOdd(int[] numbers, int k, int group1, int group2) {
         if (k == numbers.length) {
-            return (group1 % 2 == 1 && group2 % 10 == 0 || group2 % 2 == 1 && group1 % 10 == 0));
+            return (group1 % 2 == 1 && group2 % 10 == 0 || group2 % 2 == 1 && group1 % 10 == 0);
         }
         if(sidesAreOdd(numbers, k + 1, group1 + numbers[k], group2)) {
             return true;
